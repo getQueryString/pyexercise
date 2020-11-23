@@ -1,6 +1,6 @@
 # Copyright© by Fin
-from tkinter import *
 
+from tkinter import *
 
 def action():
     name = input("Name: ")
