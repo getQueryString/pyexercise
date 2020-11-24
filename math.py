@@ -9,6 +9,7 @@ def randomZahl():
     return randomnumb
     rand = randomZahl()
     wurzel(rand)
+randomZahl()
 
 
 def randomzahl():
@@ -18,22 +19,24 @@ def randomzahl():
     return randomnumb1, randomnumb2
     rand1 = randomzahl()
     calc(rand1)
+randomzahl()
 
 
 def calc(randomnumb1, randomnumb2):
+
     zahl1 = int(input(randomnumb1))
     zahl2 = int(input(randomnumb2))
 
-    print("{} + {} =".format(randomnumb1, randomnumb2), randomnumb1 + randomnumb2)
-    print("{} - {} =".format(randomnumb1, randomnumb2), randomnumb1 - randomnumb2)
-    print("{} * {} =".format(randomnumb1, randomnumb2), randomnumb1 * randomnumb2)
-    print("{} / {} =".format(randomnumb1, randomnumb2), randomnumb1 / randomnumb2)
-    return zahl1, zahl2
-
+    print("{} + {} =".format(zahl1, zahl2), zahl1 + zahl2)
+    print("{} - {} =".format(zahl1, zahl2), zahl1 - zahl2)
+    print("{} * {} =".format(zahl1, zahl2), zahl1 * zahl2)
+    print("{} / {} =".format(zahl1, zahl2), zahl1 / zahl2)
+calc()
 
 def wurzel(randomnumb):
+
     wurzel = int(input(randomnumb))
     erg = sqrt(wurzel)
-    print("Quadratwurzel: ")
+    print(f"Quadratwurzel {wurzel} ")
     print(erg)
-    return wurzel
+wurzel()
