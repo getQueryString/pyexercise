@@ -12,11 +12,13 @@ def Wurzel():
 def Calc():
     rnumb1 = randint(0, 1000)
     rnumb2 = randint(0, 1000)
+    divi = rnumb1 / rnumb2
+    divide = round(divi, 4)
 
     print("\nClac()\n{} + {} =".format(rnumb1, rnumb2), rnumb1 + rnumb2)
     print("{} - {} =".format(rnumb1, rnumb2), rnumb1 - rnumb2)
     print("{} * {} =".format(rnumb1, rnumb2), rnumb1 * rnumb2)
-    print("{} / {} =".format(rnumb1, rnumb2), rnumb1 / rnumb2)
+    print("{} / {} =".format(rnumb1, rnumb2), divide)
 
 Wurzel()
 Calc()
