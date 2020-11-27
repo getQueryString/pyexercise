@@ -6,7 +6,8 @@ from random import randint
 def Wurzel():
     rnumb = randint(0, 1000)
     erg = sqrt(rnumb)
-    print(f"\nWurzel()\nQuadratwurzel von {rnumb} ist {erg}")
+    rerg = round(erg, 4)
+    print(f"\nWurzel()\nQuadratwurzel von {rnumb} ist {rerg}")
 
 def Calc():
     rnumb1 = randint(0, 1000)
