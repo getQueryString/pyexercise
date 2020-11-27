@@ -3,48 +3,19 @@
 from math import sqrt
 from random import randint
 
+def Wurzel():
+    rnumb = randint(0, 1000)
+    erg = sqrt(rnumb)
+    print(f"\nWurzel()\nQuadratwurzel von {rnumb} ist {erg}")
 
-def randomZahl():
-    randomnumb = randint(0, 100)  # min, max
+def Calc():
+    rnumb1 = randint(0, 1000)
+    rnumb2 = randint(0, 1000)
 
-    return randomnumb
-    rand = randomZahl()
-    wurzel(rand)
+    print("\nClac()\n{} + {} =".format(rnumb1, rnumb2), rnumb1 + rnumb2)
+    print("{} - {} =".format(rnumb1, rnumb2), rnumb1 - rnumb2)
+    print("{} * {} =".format(rnumb1, rnumb2), rnumb1 * rnumb2)
+    print("{} / {} =".format(rnumb1, rnumb2), rnumb1 / rnumb2)
 
-
-randomZahl()
-
-
-def randomzahl():
-    randomnumb1 = randint(0, 100)
-    randomnumb2 = randint(0, 100)
-
-    return randomnumb1, randomnumb2
-    rand1 = randomzahl()
-    calc(rand1)
-
-
-randomzahl()
-
-
-def calc(randomnumb1, randomnumb2):
-    zahl1 = int(input(randomnumb1))
-    zahl2 = int(input(randomnumb2))
-
-    print("{} + {} =".format(zahl1, zahl2), zahl1 + zahl2)
-    print("{} - {} =".format(zahl1, zahl2), zahl1 - zahl2)
-    print("{} * {} =".format(zahl1, zahl2), zahl1 * zahl2)
-    print("{} / {} =".format(zahl1, zahl2), zahl1 / zahl2)
-
-
-calc()
-
-
-def wurzel(randomnumb):
-    wurzel = int(input(randomnumb))
-    erg = sqrt(wurzel)
-    print(f"Quadratwurzel {wurzel} ")
-    print(erg)
-
-
-wurzel()
+Wurzel()
+Calc()
